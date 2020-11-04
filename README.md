@@ -1,4 +1,5 @@
-Trigger
+# Code coverage
+[![Coverage Status](https://coveralls.io/repos/github/juholehtimaki/COMP.SE.200-2020-assignment/badge.svg?branch=main)](https://coveralls.io/github/juholehtimaki/COMP.SE.200-2020-assignment?branch=main)
 
 # Student template
 
