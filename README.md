@@ -1,3 +1,5 @@
+Trigger
+
 # Student template
 
 ## Purpose of this repository
