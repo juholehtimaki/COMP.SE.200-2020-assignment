@@ -1,4 +1,4 @@
-import toString from "../src/toString.js";
+import toString from "../../src/toString.js";
 
 describe("toString.js tests", () => {
   test("should stringify a number", () => {

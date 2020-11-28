@@ -1,4 +1,4 @@
-import isSymbol from "../src/isSymbol.js";
+import isSymbol from "../../src/isSymbol.js";
 
 describe("isSymbol.js tests", () => {
   test("should return true if value is a symbol", () => {
