@@ -1,7 +1,6 @@
 import lodashReduce from "../../src/reduce.js";
 import lodashFilter from "../../src/filter.js";
 import get from "../../src/get.js";
-import isEmpty from "../../src/isEmpty.js";
 
 const defaultItemOne = {
   id: "a1",

@@ -1,6 +1,4 @@
 import lodashMap from "../../src/map.js";
-import lodashReduce from "../../src/reduce.js";
-import lodashFilter from "../../src/filter.js";
 import capitalize from "../../src/capitalize.js";
 import ceil from "../../src/ceil.js";
 import get from "../../src/get.js";
