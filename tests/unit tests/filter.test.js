@@ -7,4 +7,10 @@ describe("filter.js tests", () => {
     const expectedArr = [3];
     expect(filter(arr, predicate)).toEqual(expectedArr);
   });
+  test("should return an empty array if no elements match the predicate", () => {
+    const arr = [1, 2, 3];
+    const predicate = (x) => x === 5;
+    const expectedArr = [];
+    expect(filter(arr, predicate)).toEqual(expectedArr);
+  });
 });
