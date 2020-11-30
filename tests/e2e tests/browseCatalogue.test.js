@@ -27,13 +27,24 @@ const catalogue = [
 ]
 
 describe('User browsing and filtering catalog array of items', () => {
-  test('Show amount of items which are vegetables.', () => {
-    const result = countBy(catalogue, (item) => item.category === 'vegetable');
-    expect(result.true).toBe(2);
+  it('Show amount of items which are vegetables.', () => {
+    const result = countBy(catalogue, (item) => item.category);
+    expect(result.vegetable).toBe(2);
   })
 
-  test('Catalogue is empty when filtering by drinks', () => {
+  it('Catalogue length is 0 when filtering by drinks', () => {
     const drinks = filter(catalogue, item => item.category === 'drink');
-    expect(isEmpty(drinks)).toBe(true);
+    expect(drinks.length).toBe(0);
+  })
+
+  it('isEmpty returns true when input is empty array from filtering.', () => {
+    const drinks = filter(catalogue, item => item.category === 'drink');
+    const result = isEmpty(drinks)
+    expect(result).toBe(true);
+  })
+
+  it('isEmpty returns false when catalogue is not filtered', () => {
+    const result = isEmpty(catalogue);
+    expect(result).toBe(false);
   })
 })
