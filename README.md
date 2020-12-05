@@ -39,3 +39,12 @@ Found bugs/faults:
 
   - does not compare the types correctly (e.g. when given "test" and Object("test) returns true)
   - severity critical
+
+- isEmpty.js
+
+  - Does not count correct object keys correctly
+  - severity critical
+
+- countyBy.js
+  - Returns 1 when should be 0
+  - severity critical
